@@ -1,0 +1,54 @@
+<template> 
+
+  <section class="hero ">
+    <div class="hero-body">
+      <div class="container">
+
+
+        <section class="section">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <div class="content is-medium">
+                <h1 class="title">${applicationModel.name}</h1>
+                <p>${applicationModel.shortDescription}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="image-wrapper">
+            <div repeat.for="image of applicationModel.images">
+                <img src.bind="image">
+            </div>
+        </div>
+
+        <div class="is-divider"></div>
+
+        <section class="section">
+            <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <div class="content is-medium">
+                    <h2>Discliamer</h2>
+                    <p>The App does not access your bank account. You need to enter bills manually. Data is stored locally on your device</p>
+
+                    <h2>Features</h2>
+                    <ul>
+                        <li repeat.for="feature of applicationModel.features">${feature}</li>
+                      </ul>
+
+                    <p>We would appritiate feedback. Hope you like it!</p>
+                    <h2>Contributors</h2>
+                    <p>Yigit Sereflioglu (yseref@tuta.io) - Turkish translation</p>
+
+
+                    <a href.bind='applicationModel.playStoreLink'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+                  </div>
+              </div>
+            </div>
+          </section>
+
+      </div>
+    </div>
+  </section>
+
+</template>

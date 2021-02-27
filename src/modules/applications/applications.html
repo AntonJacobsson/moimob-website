@@ -1,0 +1,103 @@
+<template>
+    <div class="hero-body">
+      <section class="blog-posts">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-10 is-offset-1">
+              <div class="columns featured-post is-multiline">
+                <div class="column is-12 post">
+                  <article class="columns featured">
+                    <div class="column is-7 post-img">
+                      <img style="border-radius: 3px" src.bind="featuredApplication.banner" alt="">
+                    </div>
+                    <div class="column is-5 featured-content va">
+                      <div>
+                        <h3 class="heading post-category">App</h3>
+                        <h1 class="title post-title">${featuredApplication.name}</h1>
+                        <p class="post-excerpt">${featuredApplication.shortDescription}</p>
+                        <br>
+                        <a click.delegate="navigateToRoute(featuredApplication.slug)" class="button is-info">Read More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <hr>
+              <div class="columns is-multiline">
+                <!-- <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Category Name</h3>
+                      <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                      <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                      <br>
+                      <a href="#" class="button is-primary">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Category Name</h3>
+                      <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                      <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                      <br>
+                      <a href="#" class="button is-primary">Read More</a>
+                    </div>
+                  </article>
+                </div> -->
+                <!-- <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Category Name</h3>
+                      <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                      <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                      <br>
+                      <a href="#" class="button is-primary">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Category Name</h3>
+                      <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                      <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                      <br>
+                      <a href="#" class="button is-primary">Read More</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Category Name</h3>
+                      <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                      <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                      <br>
+                      <a href="#" class="button is-primary">Read More</a>
+                    </div>
+                  </article>
+                </div> -->
+              </div>
+            </div>
+          </div>
+    
+      </section>
+    </div>
+</template>

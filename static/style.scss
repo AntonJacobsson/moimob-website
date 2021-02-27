@@ -1,0 +1,26 @@
+@import "../node_modules/bulma/bulma.sass";
+
+.device-border {
+    max-height: 50em;
+    border: 3px solid black;
+    border-radius: 30px;
+    border-bottom: 3em solid black;
+    border-top: 2em solid black;
+    box-shadow: inset 0px 0px 0px -4px rgb(255 255 255 / 10%), 1px 1px 6px rgb(0 0 0 / 5%), 1px 1px 8px rgb(0 0 0 / 7%);
+}
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    > div {
+        flex: 0 1 20em;
+        min-width: 10em;
+        > img {
+            border: 3px solid black;
+    border-radius: 30px;
+    border-bottom: 3em solid black;
+    border-top: 2em solid black;
+    box-shadow: inset 0px 0px 0px -4px rgb(255 255 255 / 10%), 1px 1px 6px rgb(0 0 0 / 5%), 1px 1px 8px rgb(0 0 0 / 7%);
+        }
+    }
+}

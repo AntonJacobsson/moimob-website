@@ -1,0 +1,30 @@
+<template>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+                  <div class="column is-6 is-offset-1">
+                    <h1 class="title is-2">
+                        ${selectedApplication.name}
+                    </h1>
+                    <h2 class="subtitle is-4">
+                        ${selectedApplication.shortDescription}
+                    </h2>
+                    <br>
+                    <p class="has-text-centered">
+                        <a class="button is-medium is-info is-outlined">
+                            Read more
+                        </a>
+                       
+                    </p>
+                    <div style="margin: 0 auto; display: block; width: 15em;">
+                        <a href.bind='selectedApplication.playStoreLink'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+                    </div>
+                </div>
+                  <div class="column is-5">
+                      <img class="device-border" src.bind="selectedApplication.image"/> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

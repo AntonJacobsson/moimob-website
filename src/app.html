@@ -1,0 +1,49 @@
+<template>
+    <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="#" class="navbar-item">
+                            <p>MOIMOB</h2>
+                        </a>
+                        <span click.delegate="toggleBurgerButton()"
+                            class="navbar-burger burger ${isBurgerButtonOpen ? 'is-active' : ''}"
+                            data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu ${isBurgerButtonOpen ? 'is-active' : ''}">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="${nav.isActive ? 'is-active' : ''}"
+                                        repeat.for="nav of router.navigation">
+                                        <a href.bind="nav.href">
+                                            ${nav.config.title}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <router-view>
+
+        </router-view>
+
+        <div class="hero-foot">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li><a href="mailto:contact@moimob.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
